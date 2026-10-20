@@ -19,7 +19,11 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowedOrigins(
-                List.of("http://localhost:5173"));
+    List.of(
+        "http://localhost:5173",
+        "https://safesignal-frontend-ebw6.onrender.com"
+    )
+);
 
         config.setAllowedMethods(
                 List.of("GET", "POST", "PUT", "PATCH",
